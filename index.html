@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./build/css/style.css">
+    <title>Carrinho de Compras</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Carrinho de Compras</h1>
+        <form id="productForm">
+            <select id="productType">
+                <option value="tv">TV</option>
+                <option value="celular">Celular</option>
+                <option value="bicicleta">Bicicleta</option>
+            </select>
+            <input type="text" id="model" placeholder="Modelo">
+            <input type="text" id="manufacturer" placeholder="Fabricante">
+            <input type="number" id="price" placeholder="Preço">
+            <div id="additionalFields">
+                <input type="text" id="resolution" placeholder="Resolução" style="display: none;">
+                <input type="number" id="sizeInches" placeholder="Tamanho em Polegadas" style="display: none;">
+                <input type="text" id="memory" placeholder="Memória" style="display: none;">
+                <input type="number" id="wheelSize" placeholder="Tamanho do Aro" style="display: none;">
+            </div>
+            <button type="button" id="addToCart">Adicionar ao Carrinho</button>
+        </form>
+        <div id="cart">
+            <h2>Total Carrinho</h2>
+            <ul id="cartList">
+               
+            </ul>
+            <p>Total: R$ <span id="cartTotal">0.00</span></p>
+        </div>
+    </div>
+    <script src="./build/js/main.js"></script>
+</body>
+</html>
